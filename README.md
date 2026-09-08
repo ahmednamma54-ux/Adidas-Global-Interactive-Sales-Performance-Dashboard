@@ -1,6 +1,11 @@
 # 📊 Adidas Interactive Sales Dashboard (Arab Region)
 
 ![Adidas Sales Dashboard](Adidas%20Sales%20DashBoard.jpg)
+---
+Adidas Sales Dashboard Overview
+<img width="1650" height="1275" alt="Adidas Sales DashBoard" src="https://github.com/user-attachments/assets/b47a3129-95a2-4a16-86e2-7c7c7d477152" />
+
+---
 
 ## 📝 Overview / نظرة عامة
 هذا المشروع يقدم لوحة تحكم تفاعلية (Interactive Dashboard) وتحليلاً شاملاً لمبيعات وأرباح شركة **Adidas** في خمس دول عربية (**مصر، السعودية، العراق، لبنان، وعمان**)، وذلك باستخدام **Pivot Tables**, **Pivot Charts**, **Map Charts**, و **Slicers** لتسهيل واستدعاء البيانات بسرعة ودقة.
