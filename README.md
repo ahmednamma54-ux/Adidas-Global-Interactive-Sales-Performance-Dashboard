@@ -1,88 +1,72 @@
-
-<img width="1650" height="1275" alt="Adidas Sales DashBoard" src="https://github.com/user-attachments/assets/6bc603fe-a3a1-4d5f-b055-3c6891e216af" />
-# 📊 Adidas Interactive Sales Dashboard (Arab Region)
----
-<img width="1650" height="1275" alt="Adidas Sales DashBoard" src="https://github.com/user-attachments/assets/b47a3129-95a2-4a16-86e2-7c7c7d477152" />
+# Adidas Middle East Interactive Sales Performance Report
+<img width="1650" height="1275" alt="Adidas Sales DashBoard" src="https://github.com/user-attachments/assets/1952ce0b-829d-4717-a270-c3057fa2a46d" />
 
 ---
+## Executive Summary
+This interactive dashboard provides a holistic view of Adidas sales distribution, revenue performance, and overall profitability across Middle Eastern regional markets (Egypt, Iraq, KSA, Lebanon, Oman) from 2023 through 2025. 
 
-## 📝 Overview / نظرة عامة
-هذا المشروع يقدم لوحة تحكم تفاعلية (Interactive Dashboard) وتحليلاً شاملاً لمبيعات وأرباح شركة **Adidas** في خمس دول عربية (**مصر، السعودية، العراق، لبنان، وعمان**)، وذلك باستخدام **Pivot Tables**, **Pivot Charts**, **Map Charts**, و **Slicers** لتسهيل واستدعاء البيانات بسرعة ودقة.
-
-This repository features an interactive sales performance dashboard for **Adidas** across 5 Arab countries (**Egypt, Saudi Arabia, Iraq, Lebanon, and Oman**), focusing on revenue, profit margins, distribution channels, and regional market share.
+Key metrics highlight total transaction volume, channel breakdown (Online, Retail, Outlet, Wholesale), and category performance across Footwear, Apparel, and Accessories.
 
 ---
 
-## 🎯 أهم مكونات وتحليلات لوحة التحكم (Key Features)
-
-1. **مؤشرات الأداء الرئيسية (KPIs Cards):**
-   - **إجمالي الوحدات المباعة (Units Sold):** 3,550 قطعة.
-   - **إجمالي المبيعات (Total Sales):** $287,378.
-   - **إجمالي الأرباح (Profit):** $85,070.
-   - **عدد المتاجر / الموزعين (Retailers):** 1,200.
-
-2. **الجداول والرسوم البيانية المحورية (Pivot Tables & Charts):**
-   - **Product Per Profit (مخطط عمودي):** يوضح ترتيب منتجات الشركة حسب مساهمتها في الربحية (الأحذية الرجالية/النسائية، الملابس، والإكسسوارات).
-   - **Sales Per Store Type (مخطط دائري Donut):** يوضح نسبة مساهمة أنواع المتاجر (*Online: 46%*, *Retail: 36%*, *Outlet: 12%*, *Wholesale: 6%*).
-   - **Retailers Sales (مخطط أفقي):** مقارنة حجم المبيعات الإجمالي بين طرق وقنوات البيع المختلفة.
-   - **Sales Trend By Year (مخطط خطي):** تتبع مسار وتطور المبيعات عبر الأرباع السنوية للأعوام (2023 - 2025).
-
-3. **الخريطة التفاعلية (Map Chart):**
-   - توضيح حجم المبيعات والفروقات التنافسية بين الدول العربية المحددة (**مصر، العراق، عمان، السعودية، لبنان**) ونسبة استحواذ كل دولة على المبيعات.
-
-4. **شرائح التصفية التفاعلية (Slicers):**
-   - إضافة Slicer مخصص للـ **Region / Country** لتصفية البيانات فوراً بمجرد الضغط على اسم الدولة.
+## Key Performance Indicators (KPIs)
+* **Total Revenue:** $287,378
+* **Total Profit:** $85,070
+* **Total Units Sold:** 3,550
+* **Total Retail Transactions/Orders:** 1,200
 
 ---
 
-## 💻 كود بايثون لتوليد ملف الإكسيل تلقائياً (Python Automation Code)
+## Detailed Data Visualizations & Insights
 
-يمكنك استخدام كود البايثون التالي لبناء وتجهيز البيانات والجداول بنفس الهيكلية المعتمدة في اللوحة:
+### 1. Sales Per Store Type (Channel Distribution)
+* **Online:** 46% ($133,207) – Primary driver of overall volume and revenue.
+* **Retail:** 36% ($102,147) – Strong physical footprint across regional flagship stores.
+* **Outlet:** 12% ($33,516) – Clearance and promotional channel sales.
+* **Wholesale:** 6% ($18,507) – B2B partner distribution channel.
 
-```python
-import openpyxl
-from openpyxl.styles import Font, PatternFill, Alignment, Border, Side
-from openpyxl.utils import get_column_letter
-import pandas as pd
-import numpy as np
+### 2. Product Profitability Breakdown
+* **Top Performers:** Men's Footwear ($28,296 profit) and Women's Footwear ($22,038 profit) are the highest revenue and margin generators.
+* **Apparel:** Men's Apparel ($11,960) and Women's Apparel ($9,483) show steady margin contributions.
+* **Accessories & Other:** Lower margin volume overall, led by Men's Accessories ($5,461) and Women's Accessories ($4,661).
 
-# 1. إعداد بيانات محاكاة مطابقة للوحة التحكم
-np.random.seed(42)
-n_rows = 1200
+### 3. Regional Sales Map & Distribution
+* **Iraq:** $81,725
+* **Egypt:** $86,028
+* **Oman:** $69,057
+* **Saudi Arabia (KSA):** $32,966
+* **Lebanon:** Regional slice included across key outlets.
 
-countries = ['Egypt', 'Saudi Arabia', 'Iraq', 'Lebanon', 'Oman']
-country_weights = [0.30, 0.12, 0.28, 0.06, 0.24]
+### 4. Sales Trend by Year & Quarter (2023–2025)
+* **2023:** Revenue peaked in Q4 at $9,194 after starting at $5,910 in Q1.
+* **2024:** Maintained stable performance around $7,600–$8,016 per quarter with a slight dip in Q3 ($6,100).
+* **2025:** Consistent performance through Q3 averaging ~$7,600–$7,892 quarterly.
 
-products = [
-    "Men's Footwear", "Women's Footwear", "Men's Apparel", "Women's Apparel",
-    "Men's Accessories", "Women's Accessories", "Other Footwear", "Other Apparel", "Other Accessories"
-]
-prod_weights = [0.35, 0.26, 0.14, 0.11, 0.06, 0.05, 0.015, 0.01, 0.005]
+---
 
-channels = ['Online', 'Retail', 'Outlet', 'Wholesale']
-channel_weights = [0.46, 0.36, 0.12, 0.06]
+## Dataset Schema Definition
 
-years = [2023, 2024, 2025]
-quarters = ['Qtr1', 'Qtr2', 'Qtr3', 'Qtr4']
+| Column Name | Data Type | Description |
+| :--- | :--- | :--- |
+| `Order_ID` | Integer | Unique identifier for each customer transaction |
+| `Order_Date` | Datetime | Date of order execution |
+| `SKU` | String | Unique product stock keeping unit code |
+| `Product_Name` | String | Name of the Adidas merchandise item |
+| `Category` | String | Broad product classification (Footwear, Apparel, Accessories) |
+| `Region` | String | Geographical market (Egypt, Iraq, KSA, Lebanon, Oman) |
+| `Store_Type` | String | Sales channel (Online, Retail, Outlet, Wholesale) |
+| `Units_Sold` | Integer | Total quantity of items purchased |
+| `Unit_Price` | Float | Price per individual product unit ($) |
+| `Discount` | Integer | Percentage discount applied to order (%) |
+| `Revenue` | Float | Gross revenue realized after discount ($) |
+| `Profit` | Float | Net profit generated from transaction ($) |
+| `Customer_Age` | Integer | Age of customer |
+| `Gender` | String | Target demographic (Male / Female) |
+| `Payment_Method` | String | Mode of payment (Apple Pay, Credit/Debit, NetBanking, PayPal) |
 
-data = []
-for i in range(n_rows):
-    c = np.random.choice(countries, p=country_weights)
-    p = np.random.choice(products, p=prod_weights)
-    ch = np.random.choice(channels, p=channel_weights)
-    y = np.random.choice(years, p=[0.3, 0.4, 0.3])
-    q = np.random.choice(quarters)
-    units = np.random.randint(1, 6)
-    
-    price = np.random.uniform(80, 150) if "Footwear" in p else np.random.uniform(30, 90)
-    margin = 0.30
-    sales = units * price
-    profit = sales * margin
-    
-    data.append([f"ORD-{10000+i}", y, q, f"{y}-{q}", c, ch, p, units, round(sales, 2), round(profit, 2)])
+---
 
-df = pd.DataFrame(data, columns=['Order ID', 'Year', 'Quarter', 'Period', 'Country', 'Sales Channel', 'Product Category', 'Units Sold', 'Total Sales ($)', 'Profit ($)'])
-
-# 2. التصدير إلى ملف إكسيل
-df.to_excel("Adidas_Sales_Analysis.xlsx", index=False, sheet_name="Raw Data")
-print("تم إنشاء ملف البيانات بنجاح!")
+## Analytical Conclusions & Recommendations
+1. **Focus on E-Commerce:** Online sales account for nearly half of all revenue (46%). Continued investment in regional digital marketing and direct-to-consumer (D2C) logistics will yield high returns.
+2. **Double Down on Footwear:** Men's and Women's Footwear combine for over 50% of overall profitability. Maintain healthy stock levels for top footwear lines (e.g., Superstar, Ultraboost).
+3. **Regional Expansion in KSA:** KSA currently lags behind Egypt and Iraq in total sales volume; target market expansion and localized promotional campaigns could unlock further revenue in Saudi Arabia.
