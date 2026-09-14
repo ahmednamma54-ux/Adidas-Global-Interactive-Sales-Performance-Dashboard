@@ -1,5 +1,5 @@
 # Adidas Middle East Interactive Sales Performance Report
-<img width="1650" height="1275" alt="Adidas Sales DashBoard" src="https://github.com/user-attachments/assets/0888496b-86d4-49cf-a547-b811950a9284" />
+<img width="1650" height="1275" alt="Adidas Sales DashBoard" src="https://github.com/user-attachments/assets/60804529-87f8-4e81-ab3a-bd771ae55d0a" />
 
 
 ---
